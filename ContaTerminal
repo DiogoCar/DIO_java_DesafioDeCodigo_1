@@ -1,0 +1,28 @@
+package contaterminal;
+import javax.swing.JOptionPane;
+//CODIGO A SEGUIR FEITO NO APACHE NETBEABS
+public class ContaTerminal {
+
+  
+    public static void main(String[] args) {
+        
+        
+        int numero;
+        double saldo;
+        String agencia, cliente,saldotexto,numerotexto;
+        //fazer o funcionamento da string!
+        cliente= JOptionPane.showInputDialog("Iniciando procedimento de cadrasto!"+"\n"+"Nome:");
+        numerotexto= JOptionPane.showInputDialog("Iniciando procedimento de cadrasto!"+"\n"+"Numero de registro:");
+        agencia= JOptionPane.showInputDialog("Iniciando procedimento de cadrasto!"+"\n"+"ID de sua agencia:");
+        
+        numero= Integer.parseInt(numerotexto);
+   
+        saldotexto= JOptionPane.showInputDialog("Procedimento de deposito!"+"\n"+"Valor:");
+        
+         saldo= Double.parseDouble(saldotexto);
+      
+             JOptionPane.showMessageDialog(null,"Olá "+ cliente +", obrigado por criar uma conta em nosso banco, sua agência "+ agencia +", conta "+ numero +" e seu saldo R$"+ saldo + " já está disponivel para saque");
+
+    }
+    
+}
